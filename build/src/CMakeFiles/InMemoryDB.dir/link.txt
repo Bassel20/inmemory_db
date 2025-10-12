@@ -1,0 +1,2 @@
+/usr/bin/ar qc libInMemoryDB.a  CMakeFiles/InMemoryDB.dir/db/Database.cpp.o CMakeFiles/InMemoryDB.dir/db/Persistence.cpp.o CMakeFiles/InMemoryDB.dir/db/Concurrency.cpp.o
+/usr/bin/ranlib libInMemoryDB.a

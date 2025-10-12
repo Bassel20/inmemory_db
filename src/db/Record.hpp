@@ -7,15 +7,15 @@ using std::string;
 using std::vector;
 
 
-class Record {
+class UserRecord {
 public:
     int id{};
     string name;
     int age{};
     vector<string> interests;
 
-    Record() = default;
+    UserRecord() = default;
 
-    Record(int id, const string& name, int age, const vector<string>& interests = {})
+    UserRecord(int id, const string& name, int age, const vector<string>& interests = {})
         : id(id), name(name), age(age), interests(interests) {}
 };

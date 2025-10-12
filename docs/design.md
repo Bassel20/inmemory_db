@@ -56,3 +56,36 @@ inmemory_db/
 └── docs/  
     └── design.md  
         High-level design document explaining architecture, data flow, and assumptions.  
+
+
+Features that could be added (in review)
+
+1. Update Record Fields
+Allow partial updates to a record without overwriting the entire entry.
+
+2. List All Keys / Records
+Methods to retrieve all keys or all records for iteration or bulk operations.
+
+3. Count Records
+Return the number of records currently stored.
+
+4. Clear Database
+Remove all records from the database.
+
+5. Existence Check
+Method to check if a key exists (contains(key)).
+
+6. Persistence
+Save/load the database to/from disk (serialization).
+
+7. Thread Safety
+Add concurrency controls (mutexes) for multi-threaded access.
+
+8. Search/Filter
+Find records by field values or custom predicates.
+
+9. TTL/Expiration
+Support time-to-live for records, auto-removing expired entries.
+
+10. Transaction Support
+Allow atomic batches of operations.
