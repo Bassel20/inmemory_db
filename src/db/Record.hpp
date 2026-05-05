@@ -1,22 +1,21 @@
 // Definition of the data record (struct/class with attributes).  
+#pragma once
 #include <stdio.h>
 #include <bits/stdc++.h>
-using namespace std;
 
-class Record {
-    private:
-        int id;
-        string name;
+using std::string;
+using std::vector;
 
-    public:
-        Record(){};
 
-        Record(string name){
-            this -> name = name;
-        }
+class UserRecord {
+public:
+    int id{};
+    string name;
+    int age{};
+    vector<string> interests;
 
-        void Delete(int id){
-            
-        }
+    UserRecord() = default;
 
+    UserRecord(int id, const string& name, int age, const vector<string>& interests = {})
+        : id(id), name(name), age(age), interests(interests) {}
 };
